@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    background-color: aqua;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: darkgreen;
+    color:red;
+}   
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    color:red;
+    margin-right: 10px;
+    border-style: solid; 
+    border-color: yellow;
+}
+
+.topnav a:hover {
+    background-color:blueviolet;
+    color: white;
+}
