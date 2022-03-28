@@ -1,3 +1,8 @@
+* {
+    box-sizing:border-box;
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('banner.jpg');
@@ -6,27 +11,69 @@ body {
     background-attachment: fixed;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: transparent;
-}   
+/* .login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+} */
 
-.topnav a {
-    float: left;
+header {
+    /* background-color: darkseagreen; */
+    background-color: rgb(143, 188, 143, 0.8);
+    padding: 10px;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
+    position: relative;
+    font-size: 40px;
+    color: blue;
+    border-style: solid;
+    border-color: red;
+}
+
+section {
+    background-color: rgb(255, 0, 0, 0.4);
+    border-style: solid;
+    border-color: blue;
     color: black;
-    margin-right: 10px;
-    border-style: double; 
-    border-color:blue;
+    margin: 50px; 
+    font-size: 25px;
+    text-align: center;
 }
 
-.topnav a:hover {
-    background-color:red;
-    color: white;
-}
+/* nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  } */
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+  }
 
-#logo {
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
 
-}
+  /* #login {
+      position: fixed;
+      bottom: 0;
+      right: height;
+      font-size: 25px;
+  } */
