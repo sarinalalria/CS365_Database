@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+
+}
+.wrap{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(banner.jpg); 
+    background-position: center;
+    background-size: cover; 
+    position: absolute;
+}
+.form-box{
+    width: 460px;
+    height: 480px;
+    position: relative; 
+    background: linear-gradient(0deg,rgb(105, 164, 201), rgba(255, 253, 208, 1)) ; 
+    margin: 6% auto; 
+    padding: 5px;
+    overflow: hidden;
+}
+
+.RegisterSign{
+    width:220px;
+	margin:20px 0;
+	position:relative;
+    left: 135px;	
+}
+h1{
+   font-family: fantasy;
+   text-decoration: underline palevioletred ; 
+   text-underline-offset: 20px;
+  
+}
+.input-group{
+    top: 110px;
+    position: absolute;
+    width: 400px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 40%; 
+    padding: 10px 0 10px 10px;
+    margin: 10px;
+    border-left: 1px solid #999;; 
+    border-top: 1px solid #999;; 
+    border-right: 1px solid #999;; 
+    border-bottom: 1px solid #999; 
+    outline: none; 
+    background: transparent;
+ 
+
+}
+
+
+select {
+    width: 40%; 
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    border-left: 1px solid #999;; 
+    border-top: 1px solid #999;; 
+    border-right: 1px solid #999;; 
+    border-bottom: 1px solid #999; 
+    outline: none; 
+    background: transparent;
+ 
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+
+.submit-btn{
+    width: 95%; 
+    margin: 20px 0;
+    padding: 10px 30px; 
+    cursor: pointer; 
+    display: block; 
+    background: linear-gradient(to right, lightgrey, palevioletred);
+    border: 0; 
+    outline: none; 
+    border-radius: 30px; 
+}
+
+#register{
+    left: 50px;
+}
+
+.LoginSign{
+    width:322px;
+	margin:350px 0;
+	position:relative;
+    left: 80px;	
+}
+h3{
+   font-family: fantasy;
+   color: darkolivegreen;
+}
+
+a{
+    font-family: fantasy;
+   color: maroon; 
+}
+
+body {
+    font-family: fantasy;
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

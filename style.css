@@ -4,76 +4,40 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: fantasy;
     background-image: url('banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/* .login {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 25px;
-} */
-
 header {
     /* background-color: darkseagreen; */
-    background-color: rgb(143, 188, 143, 0.8);
+    background: linear-gradient(to right, hsl(0, 0%, 83%, 0.2), hsl(340, 57%, 64%, 0.6));
+    /* background-color: rgb(143, 188, 143, 0.8);  */
     padding: 10px;
     text-align: center;
     position: relative;
     font-size: 40px;
+    font-family: fantasy;
     color: blue;
     border-style: solid;
     border-color: red;
 }
 
 section {
-    background-color: rgb(255, 0, 0, 0.4);
+  font-family: fantasy;
+    
+    /* background-color: rgb(255, 0, 0, 0.4); */
+    background: linear-gradient(0deg,rgb(105, 164, 201, 0.7), rgba(255, 253, 208, 0.7)) ; 
     border-style: solid;
     border-color: blue;
-    color: black;
     margin: 50px; 
+    padding: 10px;
     font-size: 25px;
     text-align: center;
 }
 
-/* nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  } */
-  
-  /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    /* background-color: #f1f1f1; */
-    padding: 10px;
-  }
-
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-  }
-
-  /* #login {
-      position: fixed;
-      bottom: 0;
-      right: height;
-      font-size: 25px;
-  } */
+a:visited {
+    color: green;
+}
