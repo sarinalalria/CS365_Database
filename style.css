@@ -11,6 +11,8 @@ body {
     background-attachment: fixed;
 }
 
+
+
 header {
     /* background-color: darkseagreen; */
     background: linear-gradient(to right, hsl(0, 0%, 83%, 0.2), hsl(340, 57%, 64%, 0.6));

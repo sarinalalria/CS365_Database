@@ -38,11 +38,11 @@
        $result = $conn->query($sql);
        if($result){
            echo "record successfully added";
-           $_SESSION['email'] = $email;
-           $_SESSION['password'] = $password;
-           echo $_SESSION['email'];
-           echo "<br >";
-           echo $_SESSION['password'];
+        //    $_SESSION['email'] = $email;
+        //    $_SESSION['password'] = $password;
+        //    echo $_SESSION['email'];
+        //    echo "<br >";
+        //    echo $_SESSION['password'];
            header('Location: index.php');
        }else{
            echo "Bad";

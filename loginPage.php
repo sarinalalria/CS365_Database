@@ -34,11 +34,14 @@
           // $sql = "Insert into customers (last_name, first_name, street, city, stateid, zip, loginid, password) Values('".$last_name."', '".$first_name."', '".$street."', '".$city."', '".$state."', '".$zip."', '".$email."','".$password."') ";
             
             //$result = $conn->query($sql);
-            if($result1){
+            if($row = $result1->fetch_assoc()){ 
                 echo "record successfully login";
               //  session_start();
-                $_SESSION['email'] = $email;
-                $_SESSION['password'] = $password;
+                $_SESSION['email'] = $row['loginid'];
+                $_SESSION['password'] = $row['password'];
+
+                // $_SESSION['email'] = $result1_array[$email];
+                // $_SESSION['password'] = $result1_array[$password];
                 // session_start();
                 header ('Location: index.php');
             }
