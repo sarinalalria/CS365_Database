@@ -34,7 +34,8 @@
           // $sql = "Insert into customers (last_name, first_name, street, city, stateid, zip, loginid, password) Values('".$last_name."', '".$first_name."', '".$street."', '".$city."', '".$state."', '".$zip."', '".$email."','".$password."') ";
             
             //$result = $conn->query($sql);
-            if($row = $result1->fetch_assoc()){ 
+            $row = $result1->fetch_assoc();
+            if($row){ 
                 echo "record successfully login";
               //  session_start();
                 $_SESSION['email'] = $row['loginid'];
@@ -46,12 +47,13 @@
                 header ('Location: index.php');
             }
             else{
-
-                echo "Email or password combination is wrong.";
+                echo "<script>alert('Email or password combination is wrong')</script>";
+                // echo "Email or password combination is wrong.";
             }   
            }
            else{
-            echo "Email or password combination is wrong.";
+            // echo "Email or password combination is wrong.";
+            echo "<script>alert('Email or password combination is wrong')</script>";
            }
         }  
      }

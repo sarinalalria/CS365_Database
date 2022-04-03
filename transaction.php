@@ -21,9 +21,12 @@
     <?php 
         if (!isset($_SESSION['email']) && !isset($_SESSION['password']))
         {
-            echo "You need to login first";
-            exit;
+            echo "<script>alert('You need to login first')</script>";
+          //  header("Location: loginPage.php");
         }
+
+        
+
     ?>
 </body>
 </html>

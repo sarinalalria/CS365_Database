@@ -49,25 +49,28 @@
 
         <section>
             <article style="color: maroon">
-                CARS
+                <u style="font-size: 37px;">CARS:</u>
+                <ul>
                 <?php
-                    $sql = "SELECT * FROM manufacturer_brand";
+                    $sql = "SELECT * FROM manufacturer_subbrand";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0)
                     {
                         while ($row = $result->fetch_assoc())
                         {
-                            echo "<p>".$row['name']."</p><br />";
+                            echo "<li>".$row['name']."</li>";
                         }
                     }
-
                 ?>
+                </ul>
             </article>
         </section>
 
         <section>
             <article style="color: maroon">
+            <u style="font-size: 37px;">DEALERS:</u>
+                <ul>
                 <?php
                         $sql = "SELECT * FROM dealers";
                         $result = $conn->query($sql);
@@ -76,10 +79,11 @@
                         {
                             while ($row = $result->fetch_assoc())
                             {
-                                echo "<p>".$row['name']."</p><br />";
+                                echo "<li>".$row['name']."</li>";
                             }
                         }
                 ?>
+                </ul>
             </article>
         </section>
 

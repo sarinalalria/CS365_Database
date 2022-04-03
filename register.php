@@ -37,7 +37,8 @@
        
        $result = $conn->query($sql);
        if($result){
-           echo "record successfully added";
+           //echo "record successfully added";
+           echo "<script>alert('You are officially a member of Claim a Car!')</script>";
         //    $_SESSION['email'] = $email;
         //    $_SESSION['password'] = $password;
         //    echo $_SESSION['email'];
