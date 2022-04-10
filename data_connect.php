@@ -10,6 +10,8 @@ $conn = new mysqli($servername, $username, $password,"cs365");
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
+
+//Gonna put all the triggers and procedures in here so they'll run everytime a page is booted up
 		//echo "Connected successfully";
 ?>
 

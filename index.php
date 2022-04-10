@@ -8,11 +8,10 @@
     //     echo $_SESSION['password'];
     // }
         session_start();
-        if (isset($_SESSION['email']) && isset($_SESSION['password']))
+        if (isset($_SESSION['email']))
         {
             echo $_SESSION['email'];
             echo "<br >";
-            echo $_SESSION['password'];
         }
         // echo $_SESSION['email'];
         // echo $_SESSION['password'];
@@ -52,7 +51,7 @@
                 <u style="font-size: 37px;">CARS:</u>
                 <ul>
                 <?php
-                    $sql = "SELECT * FROM manufacturer_subbrand";
+                    $sql = "SELECT name FROM manufacturer_subbrand";
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0)

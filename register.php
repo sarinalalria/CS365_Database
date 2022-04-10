@@ -2,11 +2,10 @@
 <?php include_once "data_connect.php"; ?>
 <?php
       session_start();
-      if (isset($_SESSION['email']) && isset($_SESSION['password']))
+      if (isset($_SESSION['email']))
       {
           echo $_SESSION['email'];
           echo "<br >";
-          echo $_SESSION['password'];
       }
 ?>
 <head>
@@ -37,13 +36,7 @@
        
        $result = $conn->query($sql);
        if($result){
-           //echo "record successfully added";
-           echo "<script>alert('You are officially a member of Claim a Car!')</script>";
-        //    $_SESSION['email'] = $email;
-        //    $_SESSION['password'] = $password;
-        //    echo $_SESSION['email'];
-        //    echo "<br >";
-        //    echo $_SESSION['password'];
+           echo "record successfully added";
            header('Location: index.php');
        }else{
            echo "Bad";
@@ -61,7 +54,7 @@
                 <h1> Register Here</h1>
             </div>
             <form id="register" action="" method="post" class="input-group">
-                <input type="text" name="first_name" class="input-field" placeholder="First Name" required>
+                <input type="text" name="first_name" class="input-field" placeholder="First Name" required autofocus>
                 <input type="text" name="last_name" class="input-field" placeholder="Last Name" required>
                 <input type="text" name="street" class="input-field" placeholder="Street Name" required>
                 <input type="text" name="city" class="input-field" placeholder="City" required>

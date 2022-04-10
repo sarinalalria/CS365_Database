@@ -10,12 +10,9 @@
 </head>
 <body>
     <?php
-        if (isset($_SESSION['email']) && isset($_SESSION['password']))
+        if (isset($_SESSION['email']))
         {
-            // session_start();
             echo $_SESSION['email'];
-            echo "<br >";
-            echo $_SESSION['password'];
             echo "<br >";
             echo "You are already logged in";
             exit;
@@ -31,28 +28,17 @@
            $result1 = $conn->query($check);
 
            if($result1->num_rows > 0){
-          // $sql = "Insert into customers (last_name, first_name, street, city, stateid, zip, loginid, password) Values('".$last_name."', '".$first_name."', '".$street."', '".$city."', '".$state."', '".$zip."', '".$email."','".$password."') ";
-            
-            //$result = $conn->query($sql);
             $row = $result1->fetch_assoc();
             if($row){ 
                 echo "record successfully login";
-              //  session_start();
                 $_SESSION['email'] = $row['loginid'];
-                $_SESSION['password'] = $row['password'];
-
-                // $_SESSION['email'] = $result1_array[$email];
-                // $_SESSION['password'] = $result1_array[$password];
-                // session_start();
                 header ('Location: index.php');
             }
             else{
                 echo "<script>alert('Email or password combination is wrong')</script>";
-                // echo "Email or password combination is wrong.";
             }   
            }
            else{
-            // echo "Email or password combination is wrong.";
             echo "<script>alert('Email or password combination is wrong')</script>";
            }
         }  
@@ -64,8 +50,8 @@
                 <h1> Log In Here</h1>
             </div>
             <form id="login" action="" method="post" class="input-group">
-                <input name="loginid" type="email" class="input-field" placeholder="Email" required>
-                <input name="password" type="text" class="input-field" placeholder="Enter Password" required>
+                <input name="loginid" type="email" class="input-field" placeholder="Email" required autocomplete="on" autofocus>
+                <input name="password" type="password" class="input-field" placeholder="Enter Password" required autocomplete="on">
                 <button type="submit" class="submit-btn">Log in</button>
             </form>
             <div class="RegisterSign">
